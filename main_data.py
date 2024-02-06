@@ -1,8 +1,12 @@
+get_ipython().system('curl -L http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz -O && tar xzvf ta-lib-0.4.0-src.tar.gz')
+get_ipython().system('cd ta-lib && ./configure --prefix=/usr && make && make install && cd - && pip install ta-lib')
+
 import streamlit as st
 from streamlit_autorefresh import st_autorefresh
 import data.fxdefs as fxd
 import time
 import pandas as pd
+
 
 #ページの自動更新
 st_autorefresh(interval=10000, key="dataframerefresh")
