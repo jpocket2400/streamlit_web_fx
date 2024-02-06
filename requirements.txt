@@ -97,7 +97,5 @@ webencodings==0.5.1
 websocket-client==1.7.0
 websockets==11.0.3
 xlrd==2.0.1
-yahoo-finance-api2==0.0.12
-yfinance==0.2.33
 zipp==3.17.0
 zope.interface==5.4.0
